@@ -1,0 +1,6 @@
+
+RECMA55 BACKLOG
+===============================================================================
+
+FOR-NEXT (see ECMA-55 chapter 13)
+- Assert no control transfer into for-body (see ECMA-55 chapter 13.4)
