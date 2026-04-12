@@ -13,7 +13,7 @@
  *
  *  Repository:    <http://source.retro-c.net/comp.stdc.recma55>
  *  File:          /src/recma55.c//
- *  Version:       01.00!00
+ *  Version:       01.00.00
  *  Environments:  C90, ASCII-CP
  *  Compliance:    Retro-Frame 1.0
  *  License:       MIT
@@ -125,7 +125,7 @@
 
 
 #define RECMA55_COPYRIGHT                 "Copyright (c) 2026 Ingo Boehmer <ingo@retro-leisure.net>"
-#define RECMA55_VERSION                   "1.0!0 (alpha)"
+#define RECMA55_VERSION                   "1.0.0"
 
 #define RECMA55_INPUT_PROMPT              "? "
 
@@ -2242,7 +2242,7 @@ static struct RECMA55_EXPR* L_ParseExpr(struct RECMA55_LOAD_CTX *pCtx, RECMA55_U
 				return NULL;
 			}
 			
-			(*ppExpr)->value.eval.u.pFunc = pFunc;
+			(*ppExpr)->value.eval.u.pFunc = pFunc;  /* as L_CreateExpr() did not return 0, *ppExpr is not NULL */
 			
 			if (pFunc->fArg)
 			{
@@ -4234,7 +4234,7 @@ static RECMA55_STATE RECMA55_ExecStatementRANDOMIZE(struct RECMA55_RUN_CTX *pCtx
 	
 	srand((unsigned int)(seed % RAND_MAX));
 	
-	rand();  /* skip first pseudo-random value */
+	rand();  /* skip first pseudo-random value (ignore return value) */
 	
 	return RECMA55_STATE_CONTINUE;
 }
@@ -5054,10 +5054,10 @@ int main(int argc, char *argv[])
 		printf("\nUsage:\n\n");
 		printf("  RECMA55 [ <option> ]* [ <input-file> ]\n");
 		printf("\nOptions:\n\n");
-		printf("  -SECURITY=LOW  Allows usage of insecure statements and functions\n");
-		printf("  -FULLCHAR      Allows usage of full character set\n");
+		printf("  -SECURITY=LOW  Allow usage of insecure statements and functions\n");
+		printf("  -FULLCHAR      Allow usage of full character set\n");
 		printf("  -BATCH         Batch processing (non-interactive mode)\n");
-		printf("  -NOBANNER      Inhibits output of the banner at program start\n");
+		printf("  -NOBANNER      Inhibit output of the banner at program start\n");
 		printf("  -LICENSE       Output license text\n");
 		printf("\nArguments:\n\n");
 		printf("  <input-file>   ECMA-55 compliant Minimal BASIC program\n");

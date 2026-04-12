@@ -2,7 +2,7 @@
 
 **Endeavor: Retro-C**  
 **Repository: \<[http://source.retro-c.net/comp.stdc.recma55](http://source.retro-c.net/comp.stdc.recma55)\>**  
-**Version: 1.0!0 (alpha)**  
+**Version: 1.0.0**  
 **Environments: C90, ASCII-CP**  
 **Compliance: Retro-Frame 1.0**  
 **License: MIT (see `LICENSE`)**  
