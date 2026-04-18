@@ -2,7 +2,7 @@
 
 **Endeavor: Retro-C**  
 **Repository: \<[http://source.retro-c.net/comp.stdc.recma55](http://source.retro-c.net/comp.stdc.recma55)\>**  
-**Version: 1.0.0**  
+**Version: 1.0.1**  
 **Environments: C90, ASCII-CP**  
 **Compliance: Retro-Frame 1.0**  
 **License: MIT (see `LICENSE`)**  
@@ -79,6 +79,11 @@ case, you may change the SDK version by right-clicking on the solution
 respective project name (i.e. `recma55`) and then selecting "Retarget solution"
 ("SDK-Version neu ausrichten" in German). You may choose any target platform
 version which is offered.
+
+### Visual Studio / Visual C++ 6
+
+If you are using Visual Studio 6 respectively Visual C++ 6, you may open the
+workspace file `build/Visual Studio 6/recma55.dsw`.
 
 
 ## 3. Usage
