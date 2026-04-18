@@ -82,7 +82,7 @@ version which is offered.
 
 ### Visual Studio / Visual C++ 6
 
-If you are using Visual Studio 6 respectively Visual C 6.0, you may open the
+If you are using Visual Studio 6 respectively Visual C++ 6, you may open the
 workspace file `build/Visual Studio 6/recma55.dsw`.
 
 
