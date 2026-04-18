@@ -13,7 +13,7 @@
  *
  *  Repository:    <http://source.retro-c.net/comp.stdc.recma55>
  *  File:          /src/recma55.c//
- *  Version:       01.01.00
+ *  Version:       01.01!00
  *  Environments:  C90, ASCII-CP
  *  Compliance:    Retro-Frame 1.1
  *  License:       MIT
@@ -125,7 +125,7 @@
 
 
 #define RECMA55_COPYRIGHT                 "Copyright (c) 2026 Ingo Boehmer <ingo@retro-leisure.net>"
-#define RECMA55_VERSION                   "1.1.0 (dev)"
+#define RECMA55_VERSION                   "1.1!0 (dev)"
 
 #define RECMA55_INPUT_PROMPT              "? "
 
