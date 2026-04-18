@@ -2,9 +2,9 @@
 
 **Endeavor: Retro-C**  
 **Repository: \<[http://source.retro-c.net/comp.stdc.recma55](http://source.retro-c.net/comp.stdc.recma55)\>**  
-**Version: 1.0.1**  
+**Version: 1.1!0 (dev)**  
 **Environments: C90, ASCII-CP**  
-**Compliance: Retro-Frame 1.0**  
+**Compliance: Retro-Frame 1.1**  
 **License: MIT (see `LICENSE`)**  
 
 Copyright (c) 2026 Ingo Boehmer \<ingo@retro-leisure.net\>
