@@ -13,7 +13,7 @@
  *
  *  Repository:    <http://source.retro-c.net/comp.stdc.recma55>
  *  File:          /src/recma55.c//
- *  Version:       01.00.00
+ *  Version:       01.00.01
  *  Environments:  C90, ASCII-CP
  *  Compliance:    Retro-Frame 1.0
  *  License:       MIT
@@ -125,7 +125,7 @@
 
 
 #define RECMA55_COPYRIGHT                 "Copyright (c) 2026 Ingo Boehmer <ingo@retro-leisure.net>"
-#define RECMA55_VERSION                   "1.0.0"
+#define RECMA55_VERSION                   "1.0.1"
 
 #define RECMA55_INPUT_PROMPT              "? "
 
@@ -139,9 +139,9 @@
 #ifndef INFINITY
 #error INFINITY not defined (consider using -DRECMA55_DOUBLE or see C90 chapter 7.5 and try -DRECMA55_HUGE_VAL)
 #endif
-#define RECMA55_NUM_INFINITY              INFINITY
+#define RECMA55_NUM_INFINITY              ((RECMA55_NUM)INFINITY)
 #else
-#define RECMA55_NUM_INFINITY              HUGE_VAL
+#define RECMA55_NUM_INFINITY              ((RECMA55_NUM)HUGE_VAL)
 #endif
 
 
